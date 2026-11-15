@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Glow & Glam Beauty Studio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<header>
+    <nav class="navbar">
+        <h2 class="logo">Glow & Glam</h2>
+
+        <ul id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#booking" class="nav-btn">Book Appointment</a>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+        <p class="subtitle">WELCOME TO GLOW & GLAM</p>
+
+        <h1>Beauty Begins<br>With <span>Confidence.</span></h1>
+
+        <p>
+            Professional makeup, bridal beauty and skincare
+            services to make your special moments unforgettable.
+        </p>
+
+        <a href="#booking" class="main-btn">Book Your Session</a>
+    </div>
+
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=700"
+        alt="Makeup artist working">
+    </div>
+
+    <div class="about-content">
+
+        <p class="subtitle">ABOUT OUR STUDIO</p>
+
+        <h2>Enhancing Your Natural Beauty</h2>
+
+        <p>
+            Welcome to Glow & Glam Beauty Studio, your local destination
+            for professional makeup and beauty services.
+
+            We believe every person deserves to feel beautiful and confident.
+            Our makeup artist provides personalized beauty experiences
+            using quality products and professional techniques.
+        </p>
+
+        <p><strong>Our Promise:</strong> Beauty, Quality and Customer Satisfaction.</p>
+
+        <a href="#services" class="main-btn">Explore Services</a>
+
+    </div>
+
+</section>
+
+<!-- Services -->
+<section class="services" id="services">
+
+    <p class="subtitle">WHAT WE OFFER</p>
+
+    <h2>Our Beauty Services</h2>
+
+    <div class="service-container">
+
+        <div class="service-card">
+            <div class="service-icon">💄</div>
+            <h3>Bridal Makeup</h3>
+            <p>Professional bridal makeup for your special day.</p>
+            <h4>Starting ₹5,000</h4>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">✨</div>
+            <h3>Party Makeup</h3>
+            <p>Glamorous makeup for parties and celebrations.</p>
+            <h4>Starting ₹1,500</h4>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🌸</div>
+            <h3>Facial & Skincare</h3>
+            <p>Relaxing facial and skincare treatments.</p>
+            <h4>Starting ₹800</h4>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">💇‍♀️</div>
+            <h3>Hair Styling</h3>
+            <p>Beautiful hairstyles for every occasion.</p>
+            <h4>Starting ₹500</h4>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">💅</div>
+            <h3>Manicure & Pedicure</h3>
+            <p>Professional nail and foot care services.</p>
+            <h4>Starting ₹600</h4>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">👁️</div>
+            <h3>Eyebrow & Grooming</h3>
+            <p>Professional eyebrow shaping and grooming.</p>
+            <h4>Starting ₹100</h4>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Gallery -->
+<section class="gallery" id="gallery">
+
+    <p class="subtitle">OUR WORK</p>
+
+    <h2>Beauty & Makeup Gallery</h2>
+
+    <div class="gallery-container">
+
+        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=500" alt="Makeup look">
+
+        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=500" alt="Beauty products">
+
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500" alt="Beauty portrait">
+
+        <img src="https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?w=500" alt="Makeup model">
+
+    </div>
+
+</section>
+
+<!-- Offer -->
+<section class="offer">
+
+    <p>SPECIAL OFFER</p>
+
+    <h2>Get 15% OFF on Your First Visit!</h2>
+
+    <p>Book your appointment today and enjoy our special offer.</p>
+
+    <a href="#booking" class="main-btn">Book Now</a>
+
+</section>
+
+<!-- Booking -->
+<section class="booking" id="booking">
+
+    <p class="subtitle">MAKE AN APPOINTMENT</p>
+
+    <h2>Book Your Beauty Session</h2>
+
+    <form id="bookingForm">
+
+        <input type="text" id="name" placeholder="Your Full Name" required>
+
+        <input type="tel" id="phone" placeholder="Mobile Number"
+        pattern="[0-9]{10}" maxlength="10" required>
+
+        <select id="service" required>
+            <option value="">Select Service</option>
+            <option>Bridal Makeup</option>
+            <option>Party Makeup</option>
+            <option>Facial & Skincare</option>
+            <option>Hair Styling</option>
+            <option>Manicure & Pedicure</option>
+            <option>Eyebrow & Grooming</option>
+        </select>
+
+        <input type="date" id="date" required>
+
+        <textarea id="message" placeholder="Additional Message"></textarea>
+
+        <button type="submit" class="main-btn">Book Appointment</button>
+
+    </form>
+
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+
+    <p class="subtitle">GET IN TOUCH</p>
+
+    <h2>Visit Our Beauty Studio</h2>
+
+    <div class="contact-info">
+
+        <div>
+            <h3>📍 Address</h3>
+            <p>Your Parlour Address, Your City</p>
+        </div>
+
+        <div>
+            <h3>📞 Phone</h3>
+            <p>+91 9876543210</p>
+        </div>
+
+        <div>
+            <h3>🕒 Opening Hours</h3>
+            <p>Monday – Saturday</p>
+            <p>10:00 AM – 8:00 PM</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+
+    <h2>Glow & Glam</h2>
+
+    <p>Beauty is not about perfection. It's about confidence.</p>
+
+    <p>© 2026 Glow & Glam Beauty Studio. All Rights Reserved.</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
